@@ -1,0 +1,86 @@
+{
+  "Dropbox": {
+    "displayName": "Dropbox",
+    "relativeDownloadPath": ["homeDir", "Dropbox"],
+    "relativeDiscoveryPath": {
+      "linux": ["homeDir", ".dropbox", "info.json"],
+      "macosx": ["homeDir", ".dropbox", "info.json"],
+      "win": ["LocalAppData", "Dropbox", "info.json"]
+    },
+    "typeSpecificData": {
+      "default": "Downloads",
+      "screenshot": "Screenshots"
+    }
+  },
+
+  "GDrive": {
+    "displayName": "Google Drive",
+    "relativeDownloadPath": ["homeDir", "Google Drive"],
+    "relativeDiscoveryPath": {
+      "macosx": ["homeDir", "Library", "Application Support", "Google", "Drive"],
+      "win": ["LocalAppData", "Google", "Drive"]
+    },
+    "typeSpecificData": {
+      "default": "Downloads"
+    }
+  },
+
+  "Box": {
+    "displayName": "Box",
+    "relativeDownloadPath": ["homeDir", "Box"],
+    "relativeDiscoveryPath": {
+      "macosx": ["homeDir", "Library", "Application Support", "Box", "Box"],
+      "win": ["LocalAppData", "Box", "Box"]
+    },
+    "typeSpecificData": {
+      "default": "Downloads"
+    }
+  },
+
+  "OneDrive": {
+    "displayName": "OneDrive",
+    "relativeDownloadPath": ["homeDir", "OneDrive"],
+    "relativeDiscoveryPath": {
+      "macosx": ["homeDir", "Library", "Application Support", "OneDrive", "settings"],
+      "win": ["LocalAppData", "OneDrive"]
+    },
+    "typeSpecificData": {
+      "default": "Downloads"
+    }
+  },
+
+  "iCloud": {
+    "displayName": "iCloud",
+    "relativeDownloadPath": ["homeDir", "iCloud"],
+    "relativeDiscoveryPath": {
+      "macosx": ["homeDir", "Library", "Application Support", "iCloud", "Accounts"]
+    },
+    "typeSpecificData": {
+      "default": "Downloads"
+    }
+  },
+
+  "Mega": {
+    "displayName": "Mega",
+    "relativeDownloadPath": ["homeDir", "MEGAsync"],
+    "relativeDiscoveryPath": {
+      "macosx": ["homeDir", "Library", "Application Support", "Mega Limited", "MegaSync"],
+      "win": ["LocalAppData", "Mega Limited", "MegaSync"]
+    },
+    "typeSpecificData": {
+      "default": "Downloads"
+    }
+  },
+
+  "SpiderOak Hive": {
+    "displayName": "SpiderOakOne",
+    "relativeDownloadPath": ["homeDir", "SpiderOak Hive"],
+    "relativeDiscoveryPath": {
+      "macosx": ["homeDir", "Library", "Application Support", "SpiderOakOne"],
+      "win": ["LocalAppData", "SpiderOakOne"]
+    },
+    "typeSpecificData": {
+      "default": "Downloads"
+    }
+  }
+}
