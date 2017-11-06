@@ -73,6 +73,7 @@ async function startup(addonData, reason) {
 
   // Exit CloudStorageProviders.init() after
   // recording providers found on user desktop
+  Services.prefs.setBoolPref("cloud.services.api.enabled", true);
   await CloudStorageProviders.init(studyUtils);
 }
 
@@ -83,6 +84,7 @@ async function shutdown(addonData, reason) {
   // if so, user or automatic?
   if (reason === REASONS.ADDON_UNINSTALL || reason === REASONS.ADDON_DISABLE) {
     log.debug("uninstall or disable");
+    Services.prefs.clearUserPref("cloud.services.api.enabled");
     if (!studyUtils._isEnding) {
       // we are the first requestors, must be user action.
       log.debug("user requested shutdown");
