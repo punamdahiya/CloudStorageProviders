@@ -60,6 +60,18 @@
     }
   },
 
+  "Yandex": {
+    "displayName": "Yandex.Disk",
+    "relativeDownloadPath": ["homeDir", "Yandex.Disk"],
+    "relativeDiscoveryPath": {
+      "macosx": ["homeDir", "Library", "Application Support", "Yandex.Disk"],
+      "win": ["LocalAppData", "Yandex.Disk"]
+    },
+    "typeSpecificData": {
+      "default": "Downloads"
+    }
+  },
+
   "Mega": {
     "displayName": "Mega",
     "relativeDownloadPath": ["homeDir", "MEGAsync"],
